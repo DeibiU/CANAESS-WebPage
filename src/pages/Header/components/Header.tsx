@@ -1,15 +1,16 @@
-import React from "react";
-import Logo from "../../../assets/CanaessLogo.png";
-import "../Header.css";
+import Logo from '../../../assets/CanaessLogo.png';
+import '../Header.css';
 
-interface HeaderProps {}
+interface HeaderProps {
+  
+}
 
 const Header = ({}: HeaderProps) => {
   return (
     <div className="Header">
-      <img src={Logo} alt="Logo" />
+      <img src={Logo}></img>
     </div>
   );
-};
+}
 
 export { Header };

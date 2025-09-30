@@ -1,5 +1,4 @@
 import React from 'react';
-import '../Footer.css'
 
 interface FooterProps {
   
@@ -7,7 +6,13 @@ interface FooterProps {
 
 const Footer = ({}: FooterProps) => {
   return (
-    <div className="Footer">
+    <div className="Footer bg-aquamarine-blue">
+      <div id="orgInfo ">
+        <text className="text-2xl">Hello</text>
+      </div>
+      <div id="orgLogos">
+
+      </div>
     </div>
   );
 }
