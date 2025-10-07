@@ -3,6 +3,7 @@ import { Header } from './pages/Header/components/Header';
 import { Footer } from './pages/Footer/components/Footer';
 import { Landing } from './pages/Landing/components/Landing';
 import { AboutUs } from './pages/AboutUs/components/AboutUs';
+import React from 'react';
 
 function App() {
   return (
