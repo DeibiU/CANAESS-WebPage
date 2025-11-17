@@ -9,11 +9,19 @@ interface AboutUsProps {
 const AboutUs = ({}: AboutUsProps) => {
   return (
     <div className="AboutUs">
-      <div>
-        <ProfilePanels/>
-        <ProfilePanels/>
-        <ProfilePanels/>
-        <ProfilePanels/>
+      <div className="px-[1%] py-[5px] gap-y-[10px]">
+        <div className="flex gap-[1%] py-[5px]">
+          <ProfilePanels/>
+          <ProfilePanels/>
+        </div>
+        <div className="flex gap-[1%] py-[5px]">
+          <ProfilePanels/>
+          <ProfilePanels/>
+        </div>
+        <div className="flex gap-[1%] py-[5px]">
+          <ProfilePanels/>
+          <ProfilePanels/>
+        </div>
       </div>
     </div>
   );

@@ -6,9 +6,9 @@ interface FooterProps {
 
 const Footer = ({}: FooterProps) => {
   return (
-    <div className="Footer bg-aquamarine-blue">
+    <div className="Footer bg-canaess-200 p-10">
       <div id="orgInfo ">
-        <text className="text-2xl">Hello</text>
+        <text className="text-2xl text-white">Footer, information here</text>
       </div>
       <div id="orgLogos">
 
