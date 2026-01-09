@@ -4,20 +4,29 @@ import App from "../App";
 import { Landing } from "../pages/Landing/components/Landing";
 import { AboutUs } from "../pages/AboutUs/components/AboutUs";
 import { Form } from "../pages/Form/components/Form";
-import { News } from "../pages/News/components/News";
+import { Documents } from "../pages/Documents/components/Documents";
 
-export const router = createBrowserRouter([{
+export const router = createBrowserRouter([
+  {
     path: "/",
     element: <App />,
-    children: [{
-        path: "", element: <Landing/>
-    }, {
-        path: "aboutUs", element: <AboutUs/>
-    },
-    {
-        path: "form", element: <Form/>
-    },{
-        path: "news", element: <News/>
-    }
-]
-}])
+    children: [
+      {
+        path: "",
+        element: <Landing />,
+      },
+      {
+        path: "aboutUs",
+        element: <AboutUs />,
+      },
+      {
+        path: "form",
+        element: <Form />,
+      },
+      {
+        path: "documents",
+        element: <Documents />,
+      },
+    ],
+  },
+]);
