@@ -1,6 +1,7 @@
 import React from 'react';
 import { Separator } from '../../Extras/components/Separator';
 import Placeholder from '../../../assets/squarePlaceholder.jpg';
+import { Link } from 'react-router-dom';
 
 interface LandingProps {
   
@@ -10,7 +11,7 @@ const Landing = ({}: LandingProps) => {
   return (
     <div className="Landing">
       <Separator />
-      <div id="content-box" className = "flex justify-center items-center flex-row">
+      <div id="content-box" className = "flex inset-shadow-sm justify-center items-center flex-row">
         <text className="w-[75%]">
           info
         </text>
