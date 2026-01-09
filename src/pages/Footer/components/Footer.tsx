@@ -6,7 +6,7 @@ interface FooterProps {
 
 const Footer = ({}: FooterProps) => {
   return (
-    <div className="Footer bg-canaess-200 p-10">
+    <div className="Footer bg-canaess-200 h-[15vh] p-10">
       <div id="orgInfo ">
         <text className="text-2xl text-white">Footer, information here</text>
       </div>
