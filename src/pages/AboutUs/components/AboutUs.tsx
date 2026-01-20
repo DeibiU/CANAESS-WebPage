@@ -2,6 +2,7 @@ import React from 'react';
 import '../AboutUs.css';
 import ProfilePanels from './ProfilePanels/Profile';
 import { Separator } from '../../Extras/components/Separator';
+import { Carousel } from '../../Extras/components/Carousel';
 
 interface AboutUsProps {
   

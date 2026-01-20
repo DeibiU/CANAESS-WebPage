@@ -5,6 +5,7 @@ import { Landing } from "../pages/Landing/components/Landing";
 import { AboutUs } from "../pages/AboutUs/components/AboutUs";
 import { Form } from "../pages/Form/components/Form";
 import { Documents } from "../pages/Documents/components/Documents";
+import { History } from "../pages/History/components/History";
 
 export const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ export const router = createBrowserRouter([
         path: "documents",
         element: <Documents />,
       },
+      {
+        path: "history",
+        element: <History/>
+      }
     ],
   },
 ]);
