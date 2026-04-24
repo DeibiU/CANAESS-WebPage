@@ -8,7 +8,6 @@ interface LandingProps {}
 const Landing = ({}: LandingProps) => {
   return (
     <div className="Landing">
-      <Separator />
       <div
         id="content-box"
         className="flex inset-shadow-sm justify-center items-center flex-row"
@@ -58,7 +57,6 @@ const Landing = ({}: LandingProps) => {
           className="w-[25%] rounded-bl-[60%] rounded-tl-[10%]"
         />
       </div>
-      <Separator />
     </div>
   );
 };

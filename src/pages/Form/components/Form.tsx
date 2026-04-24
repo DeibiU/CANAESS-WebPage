@@ -10,11 +10,11 @@ const Form = ({}: FormProps) => {
   return ( 
     <div className="Form h-screen">
       <div className="py-5">
-        <text className="text-2xl font-bold text-canaess-500">
-          Pagina de afiliacion
+        <text className="text-2xl font-bold text-canaess-500 pr-96">
+          Pagina de Afiliacion
         </text>
         <Link to="/" className="flex justify-center my-10">
-          <div className="bg-canaess-500 w-[25%] min-w-60 max-w-100 py-2 rounded-lg border-b-canaess-1000 border-b-[0.2rem] border-r-canaess-1000 border-r-[0.2rem] self-center">
+          <div className="bg-canaess-500 w-[25%] min-w-60 max-w-100 py-2 rounded-lg border-b-canaess-1000 border-b-[0.2rem] border-r-canaess-1000 border-r-[0.2rem] self-center shadow-lg">
             <text>Formulario de registro</text>
           </div>
         </Link>

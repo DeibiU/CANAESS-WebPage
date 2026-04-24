@@ -1,6 +1,7 @@
 import React from "react";
 import "../Extras.css";
 import { BiSolidRightArrow, BiSolidLeftArrow } from "react-icons/bi";
+import Placeholder from "../../../assets/squarePlaceholder.jpg";
 
 interface CarouselItem {
   title: string;
@@ -29,13 +30,20 @@ const Carousel = ({
           shownItemIndex !== 0 && setShownItemIndex((prev) => prev - 1)
         }
       >
-        <BiSolidLeftArrow />
+        <BiSolidLeftArrow className="text-canaess-500"/>
       </button>
 
-      <div>
-        <h2>{item.title}</h2>
-        <h4>{item.subtitle}</h4>
-        <p>{item.info}</p>
+      <div className="w-[70%] bg-slate-50 p-8 rounded-xl shadow-xl">
+        <h2 className="text-canaess-700 text-3xl font-semibold text-left">{item.title}</h2>
+        <h4 className="text-left pl-5 py-4">{item.subtitle}</h4>
+        <div id="content-box" className="flex inset-shadow-sm justify-center items-center flex-row">
+          <img
+          src={Placeholder}
+          alt={item.title}
+          className="w-[25%] rounded-[5%] rounded-br-[60%]"
+          />
+          <p className="p-4">{item.info}</p>
+        </div>
       </div>
 
       <button
@@ -44,7 +52,7 @@ const Carousel = ({
           setShownItemIndex((prev) => prev + 1)
         }
       >
-        <BiSolidRightArrow />
+        <BiSolidRightArrow  className="text-canaess-500"/>
       </button>
     </div>
   );

@@ -9,19 +9,19 @@ const History = ({}: HistoryProps) => {
     {
       title: "Título 1",
       subtitle: "Subtítulo 1",
-      info: "Inserte información general",
+      info: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       image: "url",
     },
     {
       title: "Título 2",
       subtitle: "Subtítulo 2",
-      info: "Inserte información general",
+      info: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       image: "url",
     },
     {
       title: "Título 3",
       subtitle: "Subtítulo 3",
-      info: "Inserte información general",
+      info: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       image: "url",
     },
   ]);
@@ -29,7 +29,9 @@ const History = ({}: HistoryProps) => {
 
   return (
     <div className="flex flex-col justify-center items-center gap-9 py-7 w-screen">
-      <h1>Historia</h1>
+      <h1 className="text-canaess-500 text-3xl font-bold pr-96">
+        Nuestra Historia
+      </h1>
       <Carousel
         shownItemIndex={shownItemIndex}
         setShownItemIndex={setShownItemIndex}
