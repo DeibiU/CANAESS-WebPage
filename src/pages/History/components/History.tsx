@@ -1,5 +1,8 @@
 import React, { useRef, useState } from "react";
 import "../History.css";
+import Picture1 from "../../../../assets/images/Picture5.jpg";
+import Picture2 from "../../../../assets/images/Picture7.png";
+import Picture3 from "../../../../assets/images/Picture8.jpg";
 import { Carousel } from "../../Extras/components/Carousel";
 
 interface HistoryProps {}
