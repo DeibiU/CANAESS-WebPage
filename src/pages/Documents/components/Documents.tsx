@@ -45,7 +45,6 @@ const rows = [
 ];
 
 const Documents = ({}: DocumentsProps) => {
-  
   const handleDownload = async (name: string, url: string) => {
     try {
       const response = await fetch(url);
@@ -70,7 +69,11 @@ const Documents = ({}: DocumentsProps) => {
       </h1>
       <div className="w-full max-w-4xl bg-gray-300">
         <Separator />
-        <TableContainer component={Paper} className="shadow-lg">
+        <TableContainer
+          component={Paper}
+          className="shadow-lg"
+          sx={{ maxHeight: 320, overflowY: "auto" }}
+        >
           <Table sx={{ minWidth: 600 }} aria-label="customized table">
             <TableBody>
               {rows.map((row) => {

@@ -12,7 +12,11 @@ const Landing = ({}: LandingProps) => {
         id="content-box"
         className="flex inset-shadow-sm justify-center items-center flex-row"
       >
-        <text className="w-[75%]">info</text>
+        <text className="w-[75%]">
+          Somos la Cámara Nacional de Economía Social Solidaria, que representa
+          y genera visibilidad a las empresas de la economía social solidaria
+          desde el sector privado.
+        </text>
         <div
           id="separator"
           className="w-0 h-0 border-r-[5vw] border-r-solid border-r-transparent border-t-[14vw] border-t-solid border-t-white margin-left"
@@ -37,15 +41,29 @@ const Landing = ({}: LandingProps) => {
           id="separator"
           className="w-0 h-0 border-l-[5vw] border-l-solid border-l-transparent border-t-[14vw] border-t-solid border-t-white margin-left"
         />
-        <text className="w-[75%]">info</text>
+        <text className="w-[75%] text-left pr-60">
+          El conjunto de actividades económicas y empresariales en el campo
+          privado por diversas entidades y organizaciones, para satisfacer el
+          interés colectivo de las personas que las integran y el interés
+          general económico social y ambiental de los territorios donde se
+          ubican. DECRETO N° 39089-MP-MTSS Julio 2016
+        </text>
       </div>
       <Separator />
       <div
         id="content-box"
         className="flex justify-center items-center flex-row"
       >
-        <Link className="w-[75%]" to={"/history"}>
-          info
+        <Link className="w-[75%] text-left pl-60" to={"/history"}>
+          Quiénes integran la ESS <br />
+          - Actividad productiva (bienes y/o servicios) <br />
+          - Asociatividad (más de 1).<br />
+          - Principio democrático (1 persona un voto). <br />
+          - Arraigo local.<br />
+          - Organizaciones privadas. <br />
+          - Arraigo sectorial. <br />
+          - Principios de equidad, 
+          transparencia, sostenibilidad
         </Link>
         <div
           id="separator"
