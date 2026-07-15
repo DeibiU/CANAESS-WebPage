@@ -45,7 +45,6 @@ const rows = [
 ];
 
 const Documents = ({}: DocumentsProps) => {
-  
   const handleDownload = async (name: string, url: string) => {
     try {
       const response = await fetch(url);
@@ -70,7 +69,11 @@ const Documents = ({}: DocumentsProps) => {
       </h1>
       <div className="w-full max-w-4xl bg-gray-300">
         <Separator />
-        <TableContainer component={Paper} className="shadow-lg">
+        <TableContainer
+          component={Paper}
+          className="shadow-lg"
+          sx={{ maxHeight: 320, overflowY: "auto" }}
+        >
           <Table sx={{ minWidth: 600 }} aria-label="customized table">
             <TableBody>
               {rows.map((row) => {
@@ -89,7 +92,7 @@ const Documents = ({}: DocumentsProps) => {
                       <Button
                         variant="contained"
                         size="small"
-                        className="!bg-canaess-500 hover:!bg-canaess-1000 !text-white"
+                        className="!bg-canaess-200 hover:!bg-canaess-100 !text-white"
                         onClick={() => handleDownload(fileName, row.fileUrl)}
                       >
                         Descargar

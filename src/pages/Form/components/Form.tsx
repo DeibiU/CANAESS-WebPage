@@ -1,10 +1,8 @@
-import React from 'react';
-import '../Form.css'
-import { Link } from 'react-router';
+import React from "react";
+import "../Form.css";
+import { Link } from "react-router";
 
-interface FormProps {
-  
-}
+interface FormProps {}
 
 const Form = ({}: FormProps) => {
   return ( 
@@ -15,23 +13,32 @@ const Form = ({}: FormProps) => {
         </text>
         <Link to="/" className="flex justify-center my-10">
           <div className="bg-canaess-500 w-[25%] min-w-60 max-w-100 py-2 rounded-lg border-b-canaess-1000 border-b-[0.2rem] border-r-canaess-1000 border-r-[0.2rem] self-center shadow-lg">
-            <text>Formulario de registro</text>
+            <text className="font-semibold">Formulario de registro</text>
           </div>
         </Link>
         <div className="flex justify-center">
           <div className="text-start max-w-[75rem] px-24">
             <text className="text-lg font-semibold">
               Indicaciones del Registro
-            </text><br/>
+            </text>
+            <br />
             <text className="">
-              Para registrar una solicitud de xxx, puede utilizar el hipervinculo de arriba para acceder al formulario, <br/>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Para registrar una solicitud puede utilizar el hipervinculo de
+              arriba para acceder al formulario. <br />
+              Antes de ingresar, <text className="font-bold">asegurese de satisfacer los siguientes requisitos:</text>  <br />
+              1. Tener la Personería Jurídica de la Empresa.
+              <br />
+              2. Tener la Cédula del Representante Legal. <br />
+              3. Tener el acuerdo de la afiliación del Consejo de Administración
+              o Junta Directiva. <br />
+              5. Haber realizado el depósito del valor de las diez acciones (diez mil colones), una
+              única vez.
             </text>
           </div>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export { Form };
