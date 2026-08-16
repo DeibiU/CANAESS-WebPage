@@ -36,12 +36,11 @@ function createData(fileUrl: string) {
 }
 
 const rows = [
-  createData("/Documents/Archivo1.txt"),
-  createData("/Documents/Archivo2.txt"),
-  createData("/Documents/Archivo3.txt"),
-  createData("/Documents/Archivo4.txt"),
-  createData("/Documents/Archivo5.txt"),
-  createData("/Documents/IgnacioZelada_CV.pdf"),
+  createData("/Documents/Carta a los Asociados.pdf"),
+  createData("/Documents/Declaracion Administrativa.pdf"),
+  createData("/Documents/Informacion Periferica del CANAESS.pdf"),
+  createData("/Documents/Proximos Eventos.pdf"),
+  createData("/Documents/Requisitos Avanzados de Afiliacion.pdf")
 ];
 
 const Documents = ({}: DocumentsProps) => {
@@ -63,7 +62,7 @@ const Documents = ({}: DocumentsProps) => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center gap-9 py-12 w-screen min-h-[50vh]">
+    <div className="flex flex-col justify-center items-center gap-9 py-12 w-screen">
       <h1 className="text-canaess-500 text-3xl font-bold text-center">
         Documentos de Interés
       </h1>
