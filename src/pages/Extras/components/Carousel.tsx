@@ -30,7 +30,7 @@ const Carousel = ({
           shownItemIndex !== 0 && setShownItemIndex((prev) => prev - 1)
         }
       >
-        <BiSolidLeftArrow className="text-canaess-500"/>
+        <BiSolidLeftArrow className="text-canaess-500 animate-bounce"/>
       </button>
 
       <div className="w-[70%] bg-slate-50 p-8 rounded-xl shadow-xl">
@@ -38,7 +38,7 @@ const Carousel = ({
         <h4 className="text-left pl-5 py-4">{item.subtitle}</h4>
         <div id="content-box" className="flex inset-shadow-sm justify-center items-center flex-row">
           <img
-          src={Placeholder}
+          src={item.image}
           alt={item.title}
           className="w-[25%] rounded-[5%] rounded-br-[60%]"
           />

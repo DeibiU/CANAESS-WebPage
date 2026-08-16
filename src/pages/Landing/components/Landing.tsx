@@ -1,10 +1,8 @@
 import React from "react";
 import { Separator } from "../../Extras/components/Separator";
-import Placeholder from "../../../assets/squarePlaceholder.jpg";
 import Graph from "../../../assets/images/Grafico conceptual.png";
 import Team from "../../../assets/images/Picture6.jpg";
 import Graph2 from "../../../assets/images/Grafico de integracion.png";
-import Asociations from "../../../assets/images/socios.png";
 import { Link } from "react-router-dom";
 
 interface LandingProps {}
@@ -14,13 +12,13 @@ const Landing = ({}: LandingProps) => {
     <div className="Landing">
       <div
         id="content-box"
-        className="flex inset-shadow-sm justify-center items-center flex-row"
+        className="flex inset-shadow-sm justify-center items-center flex-row pb-5"
       >
-        <div>
-        <h4 className="text-canaess-500 text-xl text-left font-bold pb-5">
+        <div className="pl-5 text-left">
+        <h4 className="text-canaess-500 text-xl font-bold">
         Sobre CANAESS
         </h4>
-        <text className="w-[75%] max-w-1">Somos la Cámara Nacional de Economía Social Solidaria, que representa y genera visibilidad a las empresas de la economía social solidaria desde el sector privado.</text>
+        <text className="w-[75%] max-w-1 text-start">Somos la Cámara Nacional de Economía Social Solidaria, que representa y genera visibilidad a las empresas de la economía social solidaria desde el sector privado.</text>
         </div>
         <div
           id="separator"
@@ -46,7 +44,7 @@ const Landing = ({}: LandingProps) => {
           id="separator"
           className="w-0 h-0 border-l-[5vw] border-l-solid border-l-transparent border-t-[14vw] border-t-solid border-t-white margin-left"
         />
-        <text className="w-[75%] text-left pr-60">
+        <text className="w-[75%] text-left pr-6">
           El conjunto de actividades económicas y empresariales en el campo
           privado por diversas entidades y organizaciones, para satisfacer el
           interés colectivo de las personas que las integran y el interés
@@ -59,7 +57,7 @@ const Landing = ({}: LandingProps) => {
         id="content-box"
         className="flex justify-center items-center flex-row"
       >
-        <Link className="w-[75%] text-left pl-60" to={"/history"}>
+        <text className="w-[75%] text-left pl-6">
           Quiénes integran la ESS <br />
           - Actividad productiva (bienes y/o servicios) <br />
           - Asociatividad (más de 1).<br />
@@ -69,15 +67,15 @@ const Landing = ({}: LandingProps) => {
           - Arraigo sectorial. <br />
           - Principios de equidad, 
           transparencia, sostenibilidad
-        </Link>
+        </text>
         <div
           id="separator"
           className="w-0 h-0 border-r-[5vw] border-r-solid border-r-transparent border-t-[14vw] border-t-solid border-t-white margin-left"
         />
         <img
-          src={Asociations}
+          src={Graph2}
           alt="Placeholder"
-          className="w-[25%] rounded-bl-[60%] rounded-tl-[10%]"
+          className="w-[35%]"
         />
       </div>
     </div>
